@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wP5-RE-amo">
+                    <rect key="frame" x="8" y="290" width="584" height="303"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="balloon.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="OEH-Hi-gPg">
+                            <rect key="frame" x="0.0" y="15" width="584" height="274"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="OEH-Hi-gPg" secondAttribute="bottom" constant="14" id="6yF-am-Jmy"/>
+                        <constraint firstItem="OEH-Hi-gPg" firstAttribute="top" secondItem="wP5-RE-amo" secondAttribute="top" constant="15" id="GC7-pu-7TW"/>
+                        <constraint firstItem="OEH-Hi-gPg" firstAttribute="leading" secondItem="wP5-RE-amo" secondAttribute="leading" id="HMB-H1-fch"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="357" id="Pl6-AW-98r"/>
+                        <constraint firstItem="OEH-Hi-gPg" firstAttribute="leading" secondItem="wP5-RE-amo" secondAttribute="leading" id="Veo-EZ-bNA"/>
+                        <constraint firstAttribute="trailing" secondItem="OEH-Hi-gPg" secondAttribute="trailing" id="wgC-yJ-HOb"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Pl6-AW-98r"/>
+                            <exclude reference="HMB-H1-fch"/>
+                        </mask>
+                    </variation>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tUp-hm-p0A">
+                    <rect key="frame" x="8" y="8" width="263" height="274"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="suraj.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="wNN-IV-FRy">
+                            <rect key="frame" x="5" y="0.0" width="138" height="274"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="213" id="oCI-wt-AEf"/>
+                        <constraint firstAttribute="trailing" secondItem="wNN-IV-FRy" secondAttribute="trailing" constant="120" id="qH5-b9-872"/>
+                        <constraint firstItem="wNN-IV-FRy" firstAttribute="top" secondItem="tUp-hm-p0A" secondAttribute="top" id="r0Y-Im-f1u"/>
+                        <constraint firstItem="wNN-IV-FRy" firstAttribute="leading" secondItem="tUp-hm-p0A" secondAttribute="leading" constant="5" id="umz-WI-ZUO"/>
+                        <constraint firstAttribute="bottom" secondItem="wNN-IV-FRy" secondAttribute="bottom" id="xaV-nY-nYF"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="oCI-wt-AEf"/>
+                        </mask>
+                    </variation>
+                </view>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ljI-7f-4bI">
+                    <rect key="frame" x="279" y="8" width="313" height="274"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="wP5-RE-amo" firstAttribute="top" secondItem="tUp-hm-p0A" secondAttribute="bottom" constant="8" id="5wY-Yu-iFY"/>
+                <constraint firstItem="ljI-7f-4bI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="ApC-eC-Vh3"/>
+                <constraint firstItem="wP5-RE-amo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="E87-EI-8QK"/>
+                <constraint firstAttribute="trailing" secondItem="ljI-7f-4bI" secondAttribute="trailing" constant="8" id="L83-5O-YEp"/>
+                <constraint firstItem="tUp-hm-p0A" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="VaG-Vy-NY5"/>
+                <constraint firstItem="tUp-hm-p0A" firstAttribute="width" secondItem="ljI-7f-4bI" secondAttribute="width" constant="-50" id="ZKt-6w-5kk"/>
+                <constraint firstItem="ljI-7f-4bI" firstAttribute="leading" secondItem="tUp-hm-p0A" secondAttribute="trailing" constant="8" id="bcc-Dd-ObQ"/>
+                <constraint firstAttribute="trailing" secondItem="wP5-RE-amo" secondAttribute="trailing" constant="8" id="bze-C5-JIl"/>
+                <constraint firstItem="OEH-Hi-gPg" firstAttribute="height" secondItem="tUp-hm-p0A" secondAttribute="height" id="jGv-QW-aaz"/>
+                <constraint firstItem="wP5-RE-amo" firstAttribute="top" secondItem="ljI-7f-4bI" secondAttribute="bottom" constant="8" id="muk-yS-tjH"/>
+                <constraint firstItem="tUp-hm-p0A" firstAttribute="height" secondItem="ljI-7f-4bI" secondAttribute="height" id="oxh-Oy-Hsf"/>
+                <constraint firstItem="tUp-hm-p0A" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="plg-se-8xG"/>
+                <constraint firstAttribute="bottom" secondItem="wP5-RE-amo" secondAttribute="bottom" constant="8" id="whB-dM-MJf"/>
+            </constraints>
+            <point key="canvasLocation" x="122" y="55"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="balloon.jpg" width="1920" height="1200"/>
+        <image name="suraj.jpg" width="120" height="120"/>
+    </resources>
+</document>
