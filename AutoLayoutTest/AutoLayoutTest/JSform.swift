@@ -8,7 +8,20 @@
 
 import UIKit
 
+@objc protocol FormDelegate {
+    optional func submitFormPressed()
+}
+
 class JSform : UIView {
+    
+    var delegate : FormDelegate!
+    
+    @IBAction func submitPressed(sender: AnyObject) {
+        delegate.submitFormPressed!()
+    }
+
+    @IBOutlet weak var bFormSubmit: UIButton!
+    
     required init(coder aDecoder: (NSCoder!)) {
         super.init(coder: aDecoder)
         var nibView = NSBundle.mainBundle().loadNibNamed("form", owner: self, options: nil)[0] as UIView

@@ -176,6 +176,7 @@
                     <connections>
                         <outlet property="centerHorizontalConstraint" destination="XJP-UB-p4Y" id="39H-Iw-6SH"/>
                         <outlet property="centerVerticalConstraint" destination="jve-OF-kn7" id="HWl-LC-y4s"/>
+                        <outlet property="formView" destination="clT-tk-FKC" id="Hxh-Jb-u2D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

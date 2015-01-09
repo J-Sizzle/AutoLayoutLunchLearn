@@ -8,8 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, FormDelegate {
 
+    //adding refernce so I can use its protocol methods
+    @IBOutlet weak var formView: JSform!
+    
     @IBOutlet weak var centerVerticalConstraint: NSLayoutConstraint!
     @IBOutlet weak var centerHorizontalConstraint: NSLayoutConstraint!
     
@@ -19,6 +22,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        formView.delegate = self;
         let screenSize: CGRect = UIScreen.mainScreen().bounds
         halfHeight = 200
         halfWidth = 150
@@ -35,6 +39,12 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    func submitFormPressed() {
+        //delegate method for the JSform's protocol
+        println("Form Button Pressed")
     }
 
 
